@@ -1,0 +1,34 @@
+#submission {
+    padding: 20px;
+    background-color: rgb(187, 187, 194);
+  }
+  
+  #submission h3 {
+    margin-bottom: 20px;
+  }
+  
+  #submission form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(157, 157, 185);
+    border-radius: 5px;
+  }
+  
+  #submission form label {
+    margin-bottom: 5px;
+    
+  }
+  
+  #submission form input {
+    margin-bottom: 10px;
+    background-color: rgb(223, 223, 228);
+    border-radius: 5px;
+  }
+  
+  #submission form button {
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(82, 82, 172);
+  }
+  

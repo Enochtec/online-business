@@ -1,0 +1,136 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Ensure content does not overlap with fixed header */
+.main-content {
+  padding-top: 60px; /* Adjust based on the header height */
+}
+
+/* Header styles */
+.header {
+  background-color: aqua;
+  color: white;
+  padding: 10px;
+  position: fixed; /* Make the header fixed */
+  top: 0; /* Position it at the top */
+  left: 0;
+  width: 100%; /* Ensure it spans the full width */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+  height: 60px; /* Explicitly set the height of the header */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%; /* Ensure container fills the header's height */
+}
+
+.header .logo img {
+  height: 40px;
+}
+
+.header .welcome-message {
+  display: flex;
+  align-items: center;
+}
+
+/* Sidebar styles */
+.sidenav {
+  height: 100%; /* Full-height */
+  width: 250px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place) */
+  z-index: 1000; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  background-color: #343a40; /* Dark background */
+  color: white; /* White text */
+  padding-top: 60px; /* Place content below the header */
+}
+
+.sidenav .nav-link {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .nav-link:hover {
+  background-color: #575757;
+}
+
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.sidebar-logo {
+  height: 40px;
+  width: auto;
+}
+
+.sidebar-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header .logo img {
+    height: 30px;
+  }
+
+  .header .welcome-message {
+    margin-top: 10px;
+  }
+
+  .sidenav {
+    width: 100%; /* Make sidebar full-width on smaller screens */
+    height: auto; /* Adjust height to fit content */
+    padding-top: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .sidebar-header {
+    justify-content: center;
+  }
+
+  .sidebar-logo {
+    height: 30px;
+  }
+
+  .sidebar-header h3 {
+    font-size: 1rem;
+  }
+}

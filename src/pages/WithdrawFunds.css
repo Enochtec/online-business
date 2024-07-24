@@ -1,0 +1,35 @@
+#withdrawFunds {
+    padding: 20px;
+    background-color: rgb(187, 187, 194);
+  }
+  
+  #withdrawFunds h3 {
+    margin-bottom: 20px;
+  }
+  
+  #withdrawFunds form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(139, 139, 161);
+    border-radius: 5px;
+  }
+  
+  #withdrawFunds form label {
+    margin-bottom: 5px;
+    
+  }
+  
+  #withdrawFunds form input,
+  #withdrawFunds form select {
+    margin-bottom: 10px;
+    background-color: rgb(215, 215, 219);
+    border-radius: 5px;
+  }
+  
+  #withdrawFunds form button {
+    width: 100px;
+    padding: 5px;
+    background-color: rgb(82, 82, 172);
+    border-radius: 5px;
+  }
+  

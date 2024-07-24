@@ -1,0 +1,62 @@
+.header {
+  background-color: rgb(51, 66, 66);
+  color: white;
+  padding: 10px;
+  position: fixed; /* Make the header fixed */
+  top: 0; /* Position it at the top */
+  left: 0;
+  width: 100%; /* Ensure it spans the full width */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+  height: 60px; /* Explicitly set the height of the header */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%; /* Ensure container fills the header's height */
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo img {
+  height: 40px;
+}
+
+.header .menu-toggle {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.header .welcome-message {
+  display: flex;
+  align-items: center;
+}
+
+.header .welcome-message i {
+  margin-right: 10px;
+}
+
+.header .welcome-message p {
+  margin: 0;
+}
+
+/* Ensure mobile responsiveness */
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header .logo img {
+    height: 30px;
+  }
+
+  .header .welcome-message {
+    margin-top: 10px;
+  }
+}

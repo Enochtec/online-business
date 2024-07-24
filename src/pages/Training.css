@@ -1,0 +1,19 @@
+#training {
+    padding: 20px;
+  }
+  
+  #guidelines {
+    margin-top: 20px;
+    background-color: rgb(128, 128, 192);
+    
+  }
+  
+  #guidelines ul {
+    list-style-type: none;
+    background-color: rgb(208, 208, 211);
+  }
+  
+  #guidelines li {
+    margin-bottom: 10px;
+  }
+  

@@ -1,0 +1,33 @@
+/* SpecialTraining.css */
+.training {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .training h2 {
+    color: #333;
+  }
+  
+  .training p {
+    color: #666;
+  }
+  
+  .training ol {
+    margin-left: 20px;
+  }
+  
+  #spetr {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #spetr:hover {
+    background-color: #0056b3;
+  }
+  

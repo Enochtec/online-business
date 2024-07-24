@@ -1,0 +1,27 @@
+#dashboard {
+  background-color: rgb(187, 187, 194) !important;
+  padding: 20px !important;
+  padding-top: 80px !important; /* Adjust this value based on the header height */
+}
+
+#dashboard .countdown {
+  margin-bottom: 20px !important;
+  background-color: rgb(208, 208, 211) !important;
+  border-radius: 5px !important;
+}
+
+#dashboard .dashboard-content {
+  margin-bottom: 20px !important;
+}
+
+#dashboard .user-info .info-block {
+  margin-bottom: 10px !important;
+  background-color: rgb(108, 108, 180) !important;
+  border-radius: 5px !important;
+}
+
+#dashboard .activate, #dashboard .conduct, #dashboard .copyright {
+  margin-top: 20px !important;
+  background-color: rgb(208, 208, 211) !important;
+  border-radius: 5px !important;
+}
